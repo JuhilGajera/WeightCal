@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  box-sizing: border-box;
+}
+h1,
+h2,
+p {
+  color: white;
+}
+.maincontainer {
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-image: url(original.gif);
+}
+.subcontainer1 {
+  width: 100%;
+  height: 30%;
+}
+.subcontainerlower,
+.subcontainerupper {
+  width: 100%;
+  height: 50%;
+}
+.subcontainerupper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subcontainerlower {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+}
+.subcontainer2 {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+}
+.subcontainer2div {
+  width: 80%;
+  height: 99%;
+  display: flex;
+}
+.subcontainer2divleft {
+  width: 50%;
+  height: 100%;
+}
+.subcontainer2divright {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.subcontainer2divrightmiddle {
+  width: 100%;
+  height: 50%;
+}
+.subcontainer2divrightmiddleupper {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subcontainer2divrightmiddlelower {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subcontainer2divrightmiddlelowercircle {
+  width: 25%;
+  height: 80%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 672px) {
+  .subcontainer1 {
+    width: 100%;
+    height: 50%;
+  }
+  .subcontainerlowersecond,
+  .subcontainerlowerfirst {
+    height: 50%;
+  }
+  .subcontainerlower {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+
+  }
+  .subcontainer2div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .subcontainer2divrightmiddle {
+    height: 100%;
+  }
+  .subcontainer2divrightmiddleupper {
+    height: 50%;
+  }
+}

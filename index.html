@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <div class="maincontainer">
+      <div class="subcontainer1">
+        <div class="subcontainerupper">
+          <h1 style="font-size: 40px;">Calculate a weight of an object on a planet</h1>
+        </div>
+        <div class="subcontainerlower">
+          <div class="subcontainerlowerfirst">
+            <input
+              type="number"
+              name="EnterYourWeight"
+              id="number"
+              style="height: 40px; margin-right: 1rem;border-radius: 5px;"
+              placeholder="Please enter Mass"
+            />
+            <select
+              name="selectPlanet"
+              id="selectPlanet"
+              style="height: 40px; margin-right: 1rem;border-radius: 5px;"
+            ></select>
+          </div>
+          <div class="subcontainerlowersecond">
+            <button
+              onclick="calculate()"
+              style="height: 40px; margin-right: 1rem;border-radius: 5px;width: 130px;"
+            >
+              Calculate Weight
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="subcontainer2">
+        <div class="subcontainer2div">
+          <div class="subcontainer2divleft">
+            <img class="imge" id="img" src="" alt="" />
+          </div>
+          <div class="subcontainer2divright">
+            <div class="subcontainer2divrightmiddle">
+              <div class="subcontainer2divrightmiddleupper">
+                <h1 id="para"></h1>
+              </div>
+              <div class="subcontainer2divrightmiddlelower">
+                <div class="subcontainer2divrightmiddlelowercircle">
+                  <h1 id="h"></h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
